@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghazal Labs — Modern Software for Modern Businesses</title>
+  <meta name="description" content="Simple, powerful software products to manage sales, inventory, customers and more — all in one place." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background glows -->
+  <div class="bg-glow" aria-hidden="true">
+    <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+    <span class="cloud c4"></span><span class="cloud c5"></span><span class="cloud c6"></span>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#logo-shape"/></svg>
+        <span>Ghazal Labs</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#products">Products</a>
+        <a href="#insights">Solutions</a>
+        <a href="#why">Resources</a>
+        <a href="#footer">Company</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm" data-open-contact>Get Started <i class="arr">→</i></a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill"><span class="dot"></span>Modern Software for Modern Businesses</span>
+          <h1 class="serif">The smarter way to <em>run</em>, <em>manage</em>, and <em>grow</em> your business.</h1>
+          <p class="lead">Simple, powerful software products to manage sales, inventory, customers and more — all in one place.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary">Explore Products <i class="arr">→</i></a>
+            <a href="#" class="btn btn-ghost" id="watchDemo">Watch Demo <span class="play"></span></a>
+          </div>
+          <ul class="hero-tags">
+            <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>Point of Sale</li>
+            <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg>Inventory</li>
+            <li><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/></svg>Invoicing</li>
+            <li><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16l4-6 4 3 5-8"/></svg>Analytics</li>
+          </ul>
+        </div>
+
+        <!-- Monitor mockup -->
+        <div class="hero-visual">
+          <div class="monitor">
+            <div class="screen">
+              <aside class="dash-side">
+                <div class="dash-brand"><svg viewBox="0 0 40 40"><use href="#logo-shape"/></svg>Ghazal POS</div>
+                <ul>
+                  <li class="active"><i></i>Dashboard</li>
+                  <li><i></i>Sales</li>
+                  <li><i></i>Products</li>
+                  <li><i></i>Inventory</li>
+                  <li><i></i>Customers</li>
+                  <li><i></i>Invoicing</li>
+                  <li><i></i>Analytics</li>
+                  <li><i></i>Reports</li>
+                  <li><i></i>Settings</li>
+                </ul>
+              </aside>
+              <div class="dash-main">
+                <div class="dash-top">
+                  <div class="dash-search">Search...</div>
+                  <div class="dash-user"><span class="icon-btn"></span><span class="avatar-a">A</span><div><b>Ayesha</b><small>Admin</small></div></div>
+                </div>
+                <div class="dash-stats">
+                  <div class="mini-card"><small>Total Sales</small><b data-count="12840" data-prefix="$">$12,840</b><em>+ 18.4%</em><span class="bars"><i></i><i></i><i></i></span></div>
+                  <div class="mini-card"><small>Orders</small><b data-count="284">284</b><em>+ 12.6%</em><span class="bars"><i></i><i></i><i></i></span></div>
+                  <div class="mini-card"><small>Customers</small><b data-count="1248">1,248</b><em>+ 8.2%</em><span class="bars"><i></i><i></i><i></i></span></div>
+                </div>
+                <div class="dash-bottom">
+                  <div class="mini-card chart-card">
+                    <small>Sales Overview</small>
+                    <svg class="wave" viewBox="0 0 300 110" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="waveFill" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="#ff7a59" stop-opacity=".45"/>
+                          <stop offset="1" stop-color="#ff7a59" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path class="wave-area" d="M0 80 C15 30 30 30 45 70 S75 95 90 55 S120 25 135 65 S165 90 180 50 S210 20 225 60 S255 85 270 40 S290 30 300 60 L300 110 L0 110Z" fill="url(#waveFill)"/>
+                      <path class="wave-line" d="M0 80 C15 30 30 30 45 70 S75 95 90 55 S120 25 135 65 S165 90 180 50 S210 20 225 60 S255 85 270 40 S290 30 300 60" fill="none" stroke="#ff7a59" stroke-width="2"/>
+                      <circle cx="225" cy="60" r="3.5" fill="#fff" stroke="#ff7a59" stroke-width="2"/>
+                    </svg>
+                    <span class="tooltip">$4,290<small>May 12</small></span>
+                    <div class="months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+                  </div>
+                  <div class="mini-card top-card">
+                    <small>Top Products</small>
+                    <ul>
+                      <li><span class="thumb t1"></span>Custom Apron<b>120</b></li>
+                      <li><span class="thumb t2"></span>Black Cape<b>96</b></li>
+                      <li><span class="thumb t3"></span>Chef Robe<b>64</b></li>
+                      <li><span class="thumb t4"></span>Salon Gown<b>52</b></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stand"></div>
+            <div class="base"></div>
+          </div>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Our Products</span>
+            <h2 class="serif">Everything you need<br />to <em>run</em> your business.</h2>
+          </div>
+          <p class="muted">Powerful, easy-to-use software products designed to help you sell, manage, and grow — without the complexity.</p>
+          <div class="arrows">
+            <button class="arrow" data-prod="-1" aria-label="Previous">←</button>
+            <button class="arrow" data-prod="1" aria-label="Next">→</button>
+          </div>
+        </div>
+
+        <div class="product-track" id="productTrack">
+          <article class="product-card active">
+            <span class="num">01</span>
+            <h3>Ghazal POS</h3>
+            <p>A fast and modern point of sale for retail and service businesses.</p>
+            <a href="#contact" class="round-btn" data-open-contact aria-label="Learn more">→</a>
+            <div class="illus pos">
+              <div class="pos-screen">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="pos-neck"></div><div class="pos-base"></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="num">02</span>
+            <h3>Inventory</h3>
+            <p>Track stock, manage suppliers and never run out again.</p>
+            <a href="#contact" class="round-btn" data-open-contact aria-label="Learn more">→</a>
+            <div class="illus shelves">
+              <div class="shelf"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="shelf"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="shelf"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="num">03</span>
+            <h3>Invoicing</h3>
+            <p>Create and send professional invoices in seconds.</p>
+            <a href="#contact" class="round-btn" data-open-contact aria-label="Learn more">→</a>
+            <div class="illus invoice">
+              <div class="paper">
+                <div class="paper-head"><span class="brand-dot"></span><b>Invoice</b></div>
+                <i></i><i></i><i class="short"></i><i></i><i class="short"></i>
+                <div class="paper-total"></div>
+              </div>
+              <svg class="plane" viewBox="0 0 64 64"><path d="M4 30 60 6 44 58 32 38Z" fill="#ff7a59"/><path d="M32 38 60 6 26 34Z" fill="#c9482c"/></svg>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="num">04</span>
+            <h3>Analytics</h3>
+            <p>Understand your business with real-time insights.</p>
+            <a href="#contact" class="round-btn" data-open-contact aria-label="Learn more">→</a>
+            <div class="illus analytics">
+              <div class="bars3d"><i style="--h:30%"></i><i style="--h:48%"></i><i style="--h:40%"></i><i style="--h:70%"></i><i style="--h:95%"></i><i style="--h:55%"></i></div>
+              <div class="platform"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHTS ============ -->
+    <section class="section insights" id="insights">
+      <div class="container insights-grid">
+        <div class="insights-copy">
+          <span class="eyebrow">Powerful Insights</span>
+          <h2 class="serif">Real-time data<br />for real growth.</h2>
+          <p class="muted">Get a complete view of your business with powerful analytics, from sales and inventory to customers and beyond.</p>
+          <a href="#products" class="btn btn-primary">See All Features <i class="arr">→</i></a>
+        </div>
+
+        <div class="insights-panel">
+          <div class="ip-card revenue">
+            <small>Sales &amp; Revenue</small>
+            <b class="big" data-count="12840" data-prefix="$">$12,840</b>
+            <em>+18.4% <span>vs last month</span></em>
+            <div class="rev-chart">
+              <div class="y"><span>150</span><span>100</span><span>50</span><span>0</span></div>
+              <div class="cols">
+                <div><i style="--h:30%"></i><span>Jan</span></div>
+                <div><i style="--h:45%"></i><span>Feb</span></div>
+                <div><i style="--h:60%"></i><span>Mar</span></div>
+                <div><i style="--h:50%"></i><span>Apr</span></div>
+                <div><i style="--h:70%"></i><span>May</span></div>
+                <div><i style="--h:88%"></i><span>Jun</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="ip-card small-stat">
+            <small>Orders</small>
+            <b class="big" data-count="284">284</b>
+            <em>+12.6%</em>
+            <svg viewBox="0 0 60 30" class="spark"><path d="M2 26 14 18 22 22 34 10 42 14 58 3" /><path d="M50 3h8v8" /></svg>
+          </div>
+          <div class="ip-card small-stat">
+            <small>Customers</small>
+            <b class="big" data-count="1248">1,248</b>
+            <em>+8.2%</em>
+            <svg viewBox="0 0 60 30" class="spark"><path d="M2 26 12 16 20 21 30 12 38 18 46 8 58 12" /></svg>
+          </div>
+          <div class="ip-card top-products">
+            <table>
+              <thead><tr><th>Top Products</th><th>Sold</th><th>Revenue</th></tr></thead>
+              <tbody>
+                <tr><td><span class="thumb t1"></span>Custom Apron</td><td>120</td><td>$2,400</td></tr>
+                <tr><td><span class="thumb t2"></span>Black Cape</td><td>96</td><td>$1,920</td></tr>
+                <tr><td><span class="thumb t3"></span>Chef Robe</td><td>64</td><td>$1,280</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ip-card channel">
+            <div class="channel-head"><small>Sales by Channel</small><a href="#" class="chip">View all</a></div>
+            <div class="channel-body">
+              <div class="donut"></div>
+              <ul class="legend">
+                <li><span class="d d1"></span>In Store<b>58%</b></li>
+                <li><span class="d d2"></span>Online<b>28%</b></li>
+                <li><span class="d d3"></span>Wholesale<b>14%</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section why" id="why">
+      <div class="container why-grid">
+        <div>
+          <span class="eyebrow">Why businesses choose Ghazal Labs</span>
+          <h2 class="serif">Simple. Reliable.<br />Built <em>for growth</em>.</h2>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+          <h4>Easy to Use</h4>
+          <p>Get started in minutes with an intuitive interface.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+          <h4>Reliable &amp; Secure</h4>
+          <p>Your data is always safe and protected.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17v-4M11 17V9M15 17v-6M7 8l4-3 3 2 4-3"/></svg>
+          <h4>Made for Businesses</h4>
+          <p>Powerful features that grow with you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="customers">
+      <div class="container">
+        <div class="section-head two">
+          <div>
+            <span class="eyebrow">Our Customers</span>
+            <h2 class="serif">Loved by business<br />owners everywhere.</h2>
+          </div>
+          <div class="arrows">
+            <button class="arrow" data-testi="-1" aria-label="Previous">←</button>
+            <button class="arrow" data-testi="1" aria-label="Next">→</button>
+          </div>
+        </div>
+        <div class="testi-track" id="testiTrack">
+          <article class="testi">
+            <p>“Ghazal POS has completely transformed the way we manage our store. It’s easy, fast, and reliable.”</p>
+            <div class="who"><span class="av av1">AR</span><div><b>Ayesha R.</b><small>Retail Store Owner</small><span class="stars">★★★★★</span></div></div>
+          </article>
+          <article class="testi">
+            <p>“Inventory management is now so simple. I can focus on growing my business instead of spreadsheets.”</p>
+            <div class="who"><span class="av av2">UK</span><div><b>Usman K.</b><small>Small Business Owner</small><span class="stars">★★★★★</span></div></div>
+          </article>
+          <article class="testi">
+            <p>“The best investment we made for our business. The support team is amazing!”</p>
+            <div class="who"><span class="av av3">ST</span><div><b>Sara T.</b><small>Online Store Owner</small><span class="stars">★★★★★</span></div></div>
+          </article>
+          <article class="testi">
+            <p>“Invoices that used to take an hour now take a minute. Our clients pay faster too.”</p>
+            <div class="who"><span class="av av2">HM</span><div><b>Hamza M.</b><small>Agency Owner</small><span class="stars">★★★★★</span></div></div>
+          </article>
+          <article class="testi">
+            <p>“The analytics dashboard finally shows us which products actually make money.”</p>
+            <div class="who"><span class="av av1">ZN</span><div><b>Zainab N.</b><small>Boutique Owner</small><span class="stars">★★★★★</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta-wrap" id="contact">
+      <div class="container">
+        <div class="cta">
+          <svg class="cta-hills" viewBox="0 0 800 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+            <path d="M0 230 L120 150 L210 210 L330 110 L450 200 L560 130 L680 190 L800 140 L800 300 L0 300Z" fill="#c24a30" opacity=".55"/>
+            <path d="M0 260 L150 200 L280 250 L420 180 L560 240 L700 200 L800 230 L800 300 L0 300Z" fill="#8a2f1d" opacity=".75"/>
+          </svg>
+          <div class="cta-copy">
+            <span class="eyebrow">Let’s Talk</span>
+            <h2 class="serif">Let’s talk about your needs.</h2>
+            <p>Every business is different. Tell us what you’re looking for, and we’ll help you find the right solution for your workflow.</p>
+            <button class="btn btn-primary" data-open-contact>Contact Us <i class="arr">→</i></button>
+          </div>
+          <div class="cta-visual" aria-hidden="true">
+            <div class="mug"></div>
+            <div class="laptop"><div class="lid"><svg viewBox="0 0 40 40"><use href="#logo-shape"/></svg></div><div class="deck"></div></div>
+            <div class="plant"><span></span><span></span><span></span><span></span><span></span><div class="pot"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <a href="#" class="logo"><svg class="logo-mark" viewBox="0 0 40 40"><use href="#logo-shape"/></svg><span>Ghazal Labs</span></a>
+          <p>Simple software for modern businesses.</p>
+        </div>
+        <div><h5>Products</h5><a href="#products" data-product="0">POS</a><a href="#products" data-product="1">Inventory</a><a href="#products" data-product="2">Invoicing</a><a href="#products" data-product="3">Analytics</a></div>
+        <div><h5>Company</h5><a href="#why">About</a><a href="#" data-open-contact>Contact</a></div>
+        <div><h5>Resources</h5><a href="#contact" data-open-contact>Help Center</a></div>
+        <div>
+          <h5>Follow Us</h5>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h2V4.5h-2.5A3.5 3.5 0 0 0 10 8v2.5H8V14h2v6h3.5v-6H16l.5-3.5h-3V8.5A.5.5 0 0 1 14 8Z"/></svg></a>
+            <a href="https://www.instagram.com/ghazallabs" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Ghazal Labs. All rights reserved.</span>
+        <div><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CONTACT MODAL ============ -->
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <span class="eyebrow">Let’s Talk</span>
+      <h3 class="serif" id="modalTitle">Tell us about your business</h3>
+      <form id="contactForm" novalidate>
+        <div class="row">
+          <label>Name<input name="name" required maxlength="100" placeholder="Your name" /></label>
+          <label>Email<input name="email" type="email" required maxlength="150" placeholder="you@company.com" /></label>
+        </div>
+        <label>Company<input name="company" maxlength="120" placeholder="Business name (optional)" /></label>
+        <label>Interested in
+          <select name="product">
+            <option>Ghazal POS</option><option>Inventory</option><option>Invoicing</option><option>Analytics</option><option>Not sure yet</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required maxlength="2000" placeholder="What are you looking for?"></textarea></label>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" />
+        <button type="submit" class="btn btn-primary">Send Message <i class="arr">→</i></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shared SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo-shape" viewBox="0 0 40 40">
+      <path d="M20 4c-3 2-4 5-3 8-5-3-11 0-13 6-2 8 3 17 12 18 5 1 9-1 12-4 4 3 9 1 9-4 0-3-3-5-6-4 3-4 3-10-1-13-2-1-4-2-6-1 0-3-1-5-4-6Z" fill="#ff7a59"/>
+      <circle cx="26" cy="21" r="4" fill="#0e0b0b"/>
+    </symbol>
+  </svg>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
